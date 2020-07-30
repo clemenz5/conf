@@ -73,5 +73,21 @@ bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 bindkey '^[[P' delete-char
 
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[4~"   end-of-line
+bindkey  "^[[3~"  delete-char
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+bindkey "^[[M" delete-word
+
+my-backward-delete-word() {
+    local WORDCHARS=${WORDCHARS/\//}
+    zle backward-delete-word
+}
+zle -N my-backward-delete-word
+bindkey '^H' my-backward-delete-word
+
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
