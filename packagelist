@@ -732,9 +732,6 @@ vpnc
 vscodium-bin
 vte-common
 vte3
-vulkan-icd-loader
-vulkan-intel
-vulkan-radeon
 w3m
 wayland
 wayland-protocols
