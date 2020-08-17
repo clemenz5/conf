@@ -5,4 +5,4 @@ xset b off
 # fix "xdg-open fork-bomb" export your preferred browser from here
 export BROWSER=/usr/bin/chromium
 echo "$(pwd)" > ~/tmp
-export PATH="$(pwd)/../bin:$PATH"
+export PATH="/home/$USER/conf/bin:$PATH"
