@@ -2,6 +2,7 @@ install:
 	# install yay
 	sudo pacman -S yay
 	sudo pacman-mirrors --fasttrack
+	sudo pacman -Syyu
 
 	# install packagelist
 	yay -S $(shell cat ~/conf/packagelist)
