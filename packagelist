@@ -75,7 +75,6 @@ dhclient
 dhcpcd
 diffutils
 ding-libs
-dkms
 dmenu-manjaro
 dmidecode
 dmraid
@@ -252,8 +251,6 @@ lib32-mesa
 lib32-mesa-vdpau
 lib32-ncurses
 lib32-readline
-lib32-vulkan-intel
-lib32-vulkan-radeon
 lib32-wayland
 lib32-xz
 lib32-zlib
